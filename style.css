@@ -1,0 +1,403 @@
+
+body{
+    margin:0px;
+    padding:0.5rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color:white;
+    overflow: hidden; 
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: black;
+    height: 100vh;
+    width: 300px;
+    border-radius: 1rem;  
+    margin-right: 0.7rem;
+}
+
+.content{
+  overflow:auto;   
+  flex:1;  
+  background-color: #121212;
+  border-radius: 0.5rem;  
+  padding:0 1.5rem;
+}
+
+.player{
+    background-color: black;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    background-color: #121212;
+    height: 2.75rem ;
+    line-height: 2.5rem; 
+    padding-left: 0.75rem;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.imglogo{
+    padding-top: 0.75rem;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.logo img{
+    height: 1.3rem;
+    width: 1.3rem;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;  
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 6.875rem;
+    padding: 0.5rem 0.75rem  ;
+}
+
+.navdiv{
+    line-height: 2.5rem;  
+    opacity: 0.5;
+    padding: 0.5rem 0.75rem;
+}
+
+.navdiv:hover{
+    opacity: 1;
+}
+
+.navdiv i{
+    font-size: 1.5rem;
+}
+
+.navdiv a , .library a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library{
+    margin-top: 0.5rem;
+    background-color: #121212;
+    height: 100vh;
+    padding:0.5rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.libdiv{
+    line-height: 2.5rem;  
+    padding: 0.5rem 0.75rem;
+}
+
+.libdiv img{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.library a{
+    padding-bottom: 1rem;
+}
+
+.plus{
+    margin-left: 2rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.forward{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.libtop{
+    opacity: 0.7;
+}
+.plus:hover,.forward:hover,.libtop:hover{
+    opacity: 1;
+}
+.other{
+    background-color:#121212 ;
+    border-radius: 1rem;
+    width:16.5rem;
+    padding: none;
+}
+
+.playlist,.podcast{
+    height:7.5rem;
+    background-color: #232323;
+    line-height: 2.5rem;  
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+.playlist h4{
+    margin:0;
+    height: 1.75rem;
+}
+.playlist p{
+    margin: 0;
+    line-height: 3rem;
+    font-size: 0.9rem;
+}
+.playlist button{
+    width:9rem;
+    height:2.56rem;
+    border-radius:1.2rem;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    border:none;
+}
+
+.podcast{
+    height: 12rem;
+    margin-top: 1.3rem;
+}
+
+.podcast .p1{
+    margin: 0;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.p2{
+    margin-top: 0;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+}
+.podcast button{
+    width:65%;
+    height:20%;
+    border-radius:1.2rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    border:none;
+}
+
+.playlist button:hover{
+    width:9.2rem;
+    height:2.8rem;
+    transition: ease-in 0.1s;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+.podcast button:hover{
+    width:67%;
+    height:22%;
+    transition: ease-in 0.1s;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+
+#stickynav{
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    z-index:10; 
+}
+
+.navicons img{
+    margin-left: 0.8rem;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.navbuttons{
+    display: flex;
+    align-items: center;
+}
+#user{
+    margin-right: 1.7rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+}
+
+.navbuttons button{
+    margin-right: 2rem;
+    width:9rem;
+    height:2.4rem;
+    border-radius:1.2rem;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    border:none;
+}
+
+.navbuttons button:hover{
+    width:9.2rem;
+    height:2.5rem;
+    transition: ease-in 0.1s;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+#install:hover{
+    border: 1px solid white;
+}
+
+@media(max-width:1000px){
+    #premium{
+        display: none;
+    }
+}
+
+
+
+.card{
+    border-radius: 0.5rem;
+    padding:1rem;
+    width: 13rem;
+    margin-left: 1.3rem;
+}
+.card:hover{
+    box-shadow: 0 0 5px black;    
+    background-color: #232323;
+    cursor: pointer;
+}
+.card img{
+    width:13rem;
+    height:13rem;
+    border-radius: 0.5rem;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    height: 30%;
+    width: 90%;
+    border-top:1px solid white;
+    opacity: 0.2;
+}
+
+.player{
+    display: flex;
+}
+.album{
+    width: 30%;
+    display: flex;
+}
+#song{
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem;
+}
+#albumicons{
+    display: flex;
+    align-items: center;
+}
+.controls{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.musicoptions{
+    height: 70%;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.musicoptions img{
+    height: 17px;
+    width: 17px;
+    margin-right: 30px;
+    opacity: 0.8;
+}
+
+.musicoptions img:hover{
+    opacity: 1; cursor: pointer;
+}
+
+.range{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.options{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.player .options .cicon:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1px white;
+}
+.options #controlicon1{
+ height:50px ;   width: 40px;
+}
+.options #controlicon2{
+ height:50px ;   width: 40px; 
+}
+.options #controlicon3{
+    height:30px ;   width: 30px; margin-right: 10px;
+}
+.options #controlicon4{
+    height:20px ;   width: 20px; margin-right: 10px;
+}
+.options #controlicon5{
+    height:50px ;   width: 40px; 
+}
+
+.track{
+    appearance: none;  
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.track::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+}
+.track::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
